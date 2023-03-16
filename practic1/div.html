@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div</title>
+    <style>
+        .main {
+            width: 500px;
+            height: 500px;
+            background-color: rgb(221, 69, 9);
+        }
+
+        #first-row-1 {
+            width: 500px;
+            height: 250px;
+            background-color: rgb(187, 184, 20);
+        }
+
+        #first-row-2 {
+            width: 500px;
+            height: 250px;
+            background-color: rgb(6, 9, 201);
+        } 
+        .col1{
+            width: 250px;
+            height: 250px;
+            background-color: green;
+            float: left;
+        }
+        .col2{
+            width: 250px;
+            height: 250px;
+            background-color: rgb(236, 41, 6);
+            float: left;
+        }
+        .col3{
+            width: 250px;
+            height: 250px;
+            background-color: rgb(12, 145, 221);
+            float: right;
+        }
+        .col4{
+            width: 250px;
+            height: 250px;
+            background-color: rgb(172, 184, 12);
+            float: right;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main"> <!------main div-->
+
+        <div id="first-row-1"> <!------perent row1-->
+
+            <div class="col1"> <!------col1---->
+                HOME
+            </div>
+
+            <div class="col2"> <!------col2-->
+                About
+            </div>
+        </div>
+        <div id="first-row-2"> <!------perent row2-->
+            <div >
+
+                <div class="col3">
+                    Gallery
+                </div>
+
+                <div class="col4">
+                    Contact
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>hii</h3>
+</body>
+
+</html>

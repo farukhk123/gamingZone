@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ajax</title>
+    </head>
+<body>
+    <script type="text/javascript">
+        function ajaxfunction(){
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function(){
+                if(this.readyState==4 && this.status==200){
+                    alert(this.responseText);
+                    
+                } 
+            }
+            ajax.open("POST","text.txt",true);
+            ajax.send();
+            
+        }
+    </script>
+   <button onclick="ajaxfunction()">call ajax</button> 
+</body>
+</html>

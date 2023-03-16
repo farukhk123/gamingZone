@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+
+<body>
+<form>
+    <fieldset>
+    <legend text-align="center">Enquiry Form</legend>
+    Name:<input type="text" name="name"  placeholder="Enter your name" required autofocus maxlength="50"/><br/>
+    <br/>
+    Email:<input type="email" name="email" value="" placeholder="Enter your email" required="" /><br/>
+    <br/>
+    PhoneNo:<input type="number" name="phoneno" value="" placeholder="Enter your phoneno" required=""/><br/>
+    <br/>
+    Address:<textarea name="Adderss" placeholder="Enter your address" required=""></textarea>
+    <br/>
+    <br/>
+    Gender:
+    <select required="">
+        <option>select Gender</option>
+   <option value="gender">Male</option>
+   <option value="gender">Female</option>
+   <option value="gender">Other</option>
+</select>
+    <br/>
+    <br/>
+    Age:
+    <input type="number" name="number" min="1" max="25"/>
+    <br/>
+    <br/>
+
+      Country:
+      <select>
+        <option>select Country</option>
+        <optgroup label="ASIA">
+        <option>India</option>
+        <option>Shri Lanka</option>
+        <option>China</option>
+    
+       </optgroup>
+       <optgroup label="Europ">
+        <option>US</option>
+        <option>UK</option></optgroup>
+      </select>
+      <br/>
+      <br/>
+      Hobbies:
+      <input type="checkbox" name="hobbies[]" checked="">Dancing
+      <input type="checkbox" name="hobbies[]">Singing
+      <input type="checkbox" name="hobbies[]">Painting
+
+      <br/>
+      <br/>
+      Image:
+      <input type="file" name="image"/>
+      <br/>
+      <br/>
+      <input type="submit" value="Sumbit"/>
+    <input type="reset" value="Reset"/>
+  
+</fieldset>
+</form>
+</body>
+
+</head>
+
+</html>

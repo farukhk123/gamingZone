@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>while Loop</title>
+</head>
+<body>
+<h1 id ="res"></h1>
+<button onclick="pop()" >pop</button>
+<button onclick="push()" >push</button>
+
+</body>
+<script>
+var fruits = ["apple","mango","papaya","LAL"];
+var demo = fruits;
+document.getElementById('res').innerText = demo;
+function pop(){
+    demo.pop();
+    document.getElementById('res').innerText = demo;
+}
+function push(){
+    var x = prompt("Enter a fruit","");
+    demo.push(x);
+    document.getElementById('res').innerText = demo;
+}
+</script>
+</html>

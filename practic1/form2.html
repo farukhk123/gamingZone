@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Calendar Elements</title>
+</head>
+
+<body>
+   Age:<i id="result"></i>
+   <button onclick="ans()">Answer</button>
+</body>
+<script type="text/javascript">
+    function ans(){
+     var age = prompt("enter Your age","");   
+   if(age>=18){
+    // alert("")
+    document.write("<h1>Yes you can vote</h1>");
+   }
+   else if(age==17){
+     document.write("<h1> wait one year more</h1>");
+   }
+   else {
+     document.write("<h1> NO you cannot vote</h1>");
+   }
+   document.getElementById("result").innerHTML=age;
+
+   }
+</script>
+
+</html>
